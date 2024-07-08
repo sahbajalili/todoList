@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins';
+    background-color: #353f5b;
+    color: rgb(79, 79, 79);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+
+.d-flex-c {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.d-flex-start {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.d-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 30%;
+   height: 100vh;
+   margin-top: 100px;
+   gap: 40px;
+}
+
+.todo-list {
+    width: 100%;
+    background-color: #423a6f;
+    /* border:0.01rem solid #202b4a5a ; */
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.todo-item {
+    width: 100%;
+    color: #ffffff;
+    list-style: none;
+    gap: 100px;
+    border:0.01rem solid #202b4a5a ;
+    padding: 10px 30px;
+}
+
+.todo-item:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.todo-item:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.todo-item span {
+    width: 100%;
+}
+
+.delet-icon:hover {
+    cursor: pointer;
+}
+
+.form {
+    width:100% ;
+    gap: 15px;
+}
+
+.form label {
+    color: #ffffff;
+    width: 400;
+
+}
+
+#todo-input {
+    color: #ffffff;
+    width: 100%;
+    background-color: #202b4a;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 5px 20px;
+}
+
+#todo-input:focus {
+    border: 3px solid #314e9f;
+}
+
+@media screen and (max-width:520px) {
+    .container {
+        width: 70%;
+    }
+}
